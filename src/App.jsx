@@ -6,6 +6,9 @@ import PopularTrip from "./components/PopularTrip";
 import SearchTravel from "./components/SearchTravel";
 import Reviews from "./components/Rewies";
 import Footer from "./components/Footer";
+import Together from "./components/Together";
+import Travel from "./components/Travel";
+import Backpacking from "./components/Backpacking";
 
 function App() {
 
@@ -27,10 +30,14 @@ function App() {
           </div>
           <Footer />
         </>} />
-        <Route path="/flow" element={
+        <Route path="/flights" element={
           <>
             <Navbar />
             <Flow />
+            <Together />
+            <Travel />
+            <Backpacking />
+            <Footer />
           </>
         } />
       </Routes>
