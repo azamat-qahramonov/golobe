@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Together from "./components/Together";
 import Travel from "./components/Travel";
 import Backpacking from "./components/Backpacking";
+import Stays from "./pages/Stays";
 
 function App() {
 
@@ -35,6 +36,18 @@ function App() {
             <Navbar />
             <Flow />
             <Together />
+            <Travel />
+            <Backpacking />
+            <Footer />
+          </>
+        } />
+        <Route path="/stays" element={
+          <>
+            <Navbar />
+            <Stays />
+            <div className="py-14">
+              <PopularTrip />
+            </div>
             <Travel />
             <Backpacking />
             <Footer />

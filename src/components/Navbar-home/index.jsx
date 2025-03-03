@@ -19,10 +19,12 @@ const NavbarHome = () => {
                         <div className='w-[107px] h-[5px] bg-[#8DD3BB] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out'></div>
                     </div>
                     <div className='flex flex-col gap-1 cursor-pointer group'>
-                        <div className='flex gap-1 items-center'>
-                            <img src={Bed} alt="Bed" />
-                            <p className='font-semibold text-[14px] leading-[17.07px] text-[#FFFFFF]'>Find Stays</p>
-                        </div>
+                        <NavLink to={'/stays'}>
+                            <div className='flex gap-1 items-center'>
+                                <img src={Bed} alt="Bed" />
+                                <p className='font-semibold text-[14px] leading-[17.07px] text-[#FFFFFF]'>Find Stays</p>
+                            </div>
+                        </NavLink>
                         <div className='w-[107px] h-[5px] bg-[#8DD3BB] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out'></div>
                     </div>
                 </div>
